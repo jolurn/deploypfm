@@ -28,8 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os.environ
-# DEBUG = True
+# DEBUG = 'RENDER' not in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -193,7 +193,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    'https://posgrado-fim-uni.onrender.com',
+    #'https://posgrado-fim-uni.onrender.com',
     # 'https://244a-181-66-150-129.sa.ngrok.io',
     #'http://localhost:5173',
     r'^https\:\/\/\w+\-\w+\-\w+\-\w+\-\w+\.sa\.ngrok\.io$'
