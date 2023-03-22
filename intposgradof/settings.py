@@ -192,7 +192,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    'http://192.168.0.101:3000',
+    'https://posgrado-fim-uni.onrender.com',
     # 'https://244a-181-66-150-129.sa.ngrok.io',
     'http://localhost:5173',
     r'^https\:\/\/\w+\-\w+\-\w+\-\w+\-\w+\.sa\.ngrok\.io$'
