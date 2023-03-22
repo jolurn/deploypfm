@@ -27,12 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-upto3-5nf@3!hb8i76xlb!=%yv095oh%3br2!4cox&#%%r*96e'
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'RENDER' not in os.environ
-DEBUG = True
 
-ALLOWED_HOSTS = []
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = 'RENDER' not in os.environ
+# DEBUG = True
+
+ALLOWED_HOSTS = ['https://posgrado-fim-uni.onrender.com']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
